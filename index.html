@@ -1,25 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>09.03 Lab - JavaScript</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <div class = "form">
+    <h1>Login to Account</h1>
+    <div class="label">
+      <label for="user">Username/Email</label>
+      <input type="text" name ="user" id="user">
+    </div>
+    <div class="label">
+      <label for="password">Password</label>
+      <input type="text" name ="password" id="password" >
+    </div>
+    <div>
+      <input type="submit" id="login" value="Login">
+    </div>  
+  </div>
 
-  <h2 id="joke-display"></h2>
 </body>
 
 </html>
