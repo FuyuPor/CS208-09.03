@@ -1,3 +1,4 @@
+// Checks if password is strong
 function isStrongPassword (password) {
     let result = true; // gets returned
 
@@ -18,15 +19,15 @@ function isStrongPassword (password) {
     return result;
 }
 
+//Alerts user if password is strong or not
 const login = document.getElementById("login");
-login.addEventListener("click", doSomething)
+login.addEventListener("click", doSomething);
 function doSomething(){
-    const result = "";
-    const password = document.getElementById("password").value;
+    let password = document.getElementById("password").value;
     if (!isStrongPassword(password)){
-        alert("Password is weak")
+        alert("Password is weak");
     }
     else {
-        alert("Password is strong")
+        alert("Password is strong");
     }
 }
