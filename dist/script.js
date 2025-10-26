@@ -21,8 +21,8 @@ function isStrongPassword (password) {
 
 //Alerts user if password is strong or not
 const login = document.getElementById("login");
-login.addEventListener("click", doSomething);
-function doSomething(){
+login.addEventListener("click", checkPassword);
+function checkPassword(){
     let password = document.getElementById("password").value;
     if (!isStrongPassword(password)){
         alert("Password is weak");
